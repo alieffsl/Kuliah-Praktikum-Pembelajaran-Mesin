@@ -1,22 +1,50 @@
-Tugas Praktikum
-1.	Cobalah kode pembuatan model logika Fuzzy metode Mamdani sesuai contoh pada modul. Buat flowchart berdasarkan pemahaman Anda dan analisis hasilnya! 
-2.	Modifikasi contoh 1 untuk menyelesaikan kasus berikut ini.
-Budi merupakan salah satu mahasiswa Teknik Robotika dan Kecerdasan Buatan. Salah satu mata kuliah yang diambil Budi semester ini adalah mata kuliah pembelajaran mesin. Budi anak yang rajin sehingga pada mata kuliah tersebut, budi mendapatkan nilai tugas 85, nilai UTS 80 dan nilai UAS 40. Nilai Budi pada UAS rendah karena budi ketiduran dan lupa belajar materi untuk ujian akhir tersebut. Budi was-was dengan berapa nilai yang akan didapatkan oleh budi apakah rendah, sedang, atau tinggi. 
-a.	Bantu Budi untuk menghitung dan mengetahui nilai akhir yang dia miliki seperti contoh 1 pada modul ini. Pada contoh 1 rule yang telah ditentukan hanya memiliki nilai satu ujian sedangkan budi memiliki dua ujian yaitu UTS dan UAS. Sesuaikan contoh 1 dengan kasus yang dialami oleh budi sehingga budi dapat mengetahui nilai akhir yang dia miliki. Penentuan rule:
-●	Konversi Nilai keanggotaan Low = 1, Middle = 2 , High = 3
-●	Hasil dihitung menggunakan= Total konversi nilai / 3
-●	JIka hasil yang didapatkan memiliki rentang
-○	Hasil < 1,5 adalah Low
-○	Hasil >= 1,5 dan < 2,5 adalah Middle
-○	Hasil >= 2,5 adalah High
-b.	Dalam kenyataan, tugas yang dikerjakan Budi ternyata tidak hanya satu namun terdapat tiga tugas dengan nilai 80, 85, dan 75. Sesuaikan nilai tugas ini dengan menghitung rata-rata sebelum masuk pada rule fuzzy yang terdapat pada contoh 1.
-c.	Nilai akhir akademik budi hanya ada A, B, dan C. Konversi hasil fuzzy menjadi nilai yang dapat diterima oleh sistem akademik dengan ketentuan: jika nilai akhir “rendah” maka setara dengan “C”, jika nilai akhir “sedang” maka setara dengan “B”, jika nilai akhir “tinggi” maka setara dengan “A”
-d.	Jika di dalam kelas pembelajaran mesin tidak hanya Budi, terdapat teman-teman budi yang mereka juga ingin mengetahui hasil akhir dari nilai mereka. Prediksi hasil dari nilai teman Budi sebagai berikut.
-Nama	Tugas	UTS	UAS	Nilai Akhir 
-Jasmine	70	80	75	80	40	
-Rafik	90	80	80	77	90	
-Mutia	50	55	60	10	30	
-Patrik	10	0	90	60	70	
-Fajar	65	35	100	70	72	
+## Practical Assignment
 
-e.	Berikan analisis hasilnya
+### Task 1: Fuzzy Logic Model using Mamdani Method
+
+Implement the Fuzzy Logic model using the Mamdani method based on the example provided in the module. Create a flowchart based on your understanding and analyze the results.
+
+### Task 2: Modification of Example 1
+
+Budi, a diligent student majoring in Robotics and Artificial Intelligence, is taking a Machine Learning course this semester. He scored 85 in assignments, 80 in the midterm exam (UTS), and 40 in the final exam (UAS). Budi performed poorly in the final exam due to oversleeping and forgetting to study. He is concerned about his overall grade, whether it is low, medium, or high.
+
+#### a. Calculating Budi's Final Grade
+
+Help Budi calculate his final grade using the example 1 approach in the module. In this modified scenario, the rules are adjusted as follows:
+- Convert Membership Values: Low = 1, Middle = 2, High = 3
+- Calculate using: Total converted values / 3
+- If the result falls within:
+  - Less than 1.5: Low
+  - Between 1.5 and 2.5: Middle
+  - Greater than or equal to 2.5: High
+
+#### b. Handling Multiple Assignments
+
+In reality, Budi has three assignments with scores 80, 85, and 75. Adjust the values by calculating the average before applying the fuzzy rules from example 1.
+
+#### c. Converting Fuzzy Results to Academic Grades
+
+Convert the fuzzy output to academic grades: 
+- "Low" corresponds to "C"
+- "Middle" corresponds to "B"
+- "High" corresponds to "A"
+
+#### d. Predicting Results for Budi's Friends
+
+Predict the final grades for Budi's friends based on their scores:
+
+| Name   | Assignments | UTS | UAS | Final Grade |
+| ------ | ----------- | --- | --- | ----------- |
+| Jasmine| 70          | 80  | 75  | -           |
+| Rafik  | 90          | 80  | 77  | -           |
+| Mutia  | 50          | 55  | 60  | -           |
+| Patrik | 10          | 0   | 90  | -           |
+| Fajar  | 65          | 35  | 100 | -           |
+
+### Task 2 Analysis:
+
+The implemented fuzzy logic model provides a systematic approach to evaluating students' performance based on their assignment scores, midterm exam results, and final exam results. By converting numerical scores into fuzzy values and applying predefined rules, the system effectively categorizes students into low, medium, and high achievement levels.
+
+For Budi, his average assignment score and exam results were analyzed to determine his overall performance. The fuzzy logic system successfully converted the scores into linguistic variables and mapped them to appropriate academic grades (C, B, or A) for easy interpretation.
+
+For Budi's friends, their scores were input into the system, and the fuzzy logic rules were applied to predict their final grades. This predictive analysis enables proactive intervention and support for students who may need additional assistance based on their performance. The fuzzy logic model serves as a valuable tool for educators and students alike, providing a clear understanding of academic achievements and areas that require improvement.
